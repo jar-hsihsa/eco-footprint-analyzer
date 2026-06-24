@@ -14,15 +14,21 @@ graph TD
     classDef mcp fill:#fff3e0,stroke:#ffb74d,stroke-width:2px,color:#e65100;
     classDef final fill:#a5d6a7,stroke:#2e7d32,stroke-width:3px,color:#000000,font-weight:bold;
 
-    User([👤 User Input: Utility Data]) ::: eco --> Security[🛡️ Security Checkpoint\nRedact PII & Prevent Injection] ::: safe
-    Security -- safe --> HITL1[🌍 Ask Country Node\nHITL] ::: eco
-    HITL1 --> DataAnalyst[📊 Data Analyst Agent\nExtract & Summarize] ::: safe
-    DataAnalyst -.->|Fetches data| MCP[(🔌 MCP Server)] ::: mcp
-    DataAnalyst --> ClimateImpact[🌱 Climate Impact Agent\nCalculate Footprint] ::: safe
+    User([👤 User Input: Utility Data]) --> Security[🛡️ Security Checkpoint<br>Redact PII & Prevent Injection]
+    Security -- safe --> HITL1[🌍 Ask Country Node<br>HITL]
+    HITL1 --> DataAnalyst[📊 Data Analyst Agent<br>Extract & Summarize]
+    DataAnalyst -.->|Fetches data| MCP[(🔌 MCP Server)]
+    DataAnalyst --> ClimateImpact[🌱 Climate Impact Agent<br>Calculate Footprint]
     ClimateImpact -.->|Fetches emission factors| MCP
-    ClimateImpact --> HITL2[✅ Final Approval Node\nHITL] ::: eco
-    HITL2 --> Final[🌿 Climate Action Plan] ::: final
-    Security -- error --> Blocked((🛑 Request Blocked)) ::: alert
+    ClimateImpact --> HITL2[✅ Final Approval Node<br>HITL]
+    HITL2 --> Final[🌿 Climate Action Plan]
+    Security -- error --> Blocked((🛑 Request Blocked))
+
+    class User,HITL1,HITL2 eco;
+    class Security,DataAnalyst,ClimateImpact safe;
+    class MCP mcp;
+    class Final final;
+    class Blocked alert;
 ```
 
 ## 3. Concepts Used
