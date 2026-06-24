@@ -1,6 +1,6 @@
 # 🌍 Eco Footprint Analyzer
 
-**Eco Footprint Analyzer** is an intelligent, multi-agent AI application designed to help users calculate, understand, and reduce their carbon footprint. Powered by Google's Agent Development Kit (ADK) and Gemini, it seamlessly processes raw utility data to generate actionable climate impact plans.
+**Eco Footprint Analyzer** is an intelligent, multi-agent AI application designed to help users calculate, understand, and reduce their carbon footprint. Powered by Google's Agent Development Kit (ADK) and Gemini, it seamlessly processes raw utility data to generate actionable climate impact plans. Built with a core focus on empowering global sustainability, it provides deeply localized insights to drive climate action for any nation. For instance, its detailed regional factors actively support monumental national goals like India's "Panchamrit" vision of achieving Net Zero emissions by 2070.
 
 ## 🏗️ Agent Architecture
 
@@ -69,3 +69,8 @@ This will start a local web server where you can interact with the Eco Footprint
 
 ### Workflow Diagram
 ![Architecture Diagram](./assets/architecture_diagram.png)
+
+---
+
+## 🎤 Presentation
+Check out the [Demo Script](./DEMO_SCRIPT.txt) for a complete 3-minute presentation walkthrough of the Eco Footprint Analyzer!

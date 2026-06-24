@@ -1,0 +1,44 @@
+[0:00 — HOOK]
+(pause, looking directly at the camera/audience)
+As nations around the globe race toward Net Zero emissions, grassroots participation is more critical than ever. Every citizen, in every country, has a role to play. But for individuals and small businesses, calculating an accurate carbon footprint from raw utility bills is a manual, confusing, and deeply frustrating process. Finding the exact emission factors for your specific region usually requires hours of digging through complex databases.
+
+[0:20 — WHAT IT IS]
+(smile)
+That's why I built the Eco Footprint Analyzer. It's an intelligent, multi-agent orchestrator built with Google's Agent Development Kit (ADK) that autonomously transforms your raw utility data into a personalized, highly accurate climate action plan.
+
+[0:40 — SHOW THE BANNER]
+(show assets/cover_page_banner.png)
+As you can see, our project is designed to be Automated, Secure, and Intelligent—making sustainability accessible to everyone, without needing a degree in environmental science.
+
+[1:00 — ARCHITECTURE]
+(show assets/architecture_diagram.png)
+Let's look under the hood at how these agents collaborate.
+(point or gesture)
+First, the user inputs their raw utility data. But before any AI processing happens, the data passes through our custom Security Checkpoint, which instantly scrubs any sensitive PII like SSNs or Aadhaar numbers and blocks malicious prompt injections.
+Once cleared, our Ask Country Node pauses the flow to explicitly ask the user for their location, ensuring our calculations are perfectly localized.
+Then, the Data Analyst Agent takes over to extract and summarize the usage numbers. 
+This agent passes the baton to the Climate Impact Agent, which calculates the exact carbon footprint. 
+Both of these agents are supercharged by a dedicated MCP Server that fetches real-time, deterministic emission factors and baseline data.
+Finally, everything stops at the Human Approval Pause Node, giving the user final sign-off before the official Eco Report is generated.
+
+[2:00 — LIVE DEMO]
+(switch to playground at localhost:18081)
+Let's see it in action. I'm going to drop in a standard prompt: "I used 500 kWh electricity and 40 liters of petrol this month."
+(pause as the UI loads)
+Notice how it immediately halts and asks for my country. To show our localized data, I'll type "India". 
+(pause)
+Now the agents are running. The Data Analyst summarizes the numbers, and the Climate Impact Agent queries the MCP server for India's exact emission factors. 
+For India, the CEA factor for electricity is 0.71 kg per kWh, and standard petrol is 2.31 kg per liter. 
+And there it is! It correctly calculated the exact footprint of 447.4 kg of CO2 and generated a tailored reduction tip.
+Now, let's test the security. I'll type: "My usage is 100 kWh, and my PAN card is ABCDE1234F."
+(pause)
+If we look at the internal routing, the Security Checkpoint intercepted it. The LLM only ever saw "[REDACTED_PAN]". Your privacy is entirely preserved.
+And if I try an injection attack like "Ignore previous instructions", the workflow instantly terminates and routes to the Blocked node.
+
+[3:00 — SECURITY & MCP]
+(switch back to camera)
+This architecture proves that AI doesn't have to be a black box. By utilizing a deterministic MCP server, we completely eliminate hallucinations in our math. And our custom Security Checkpoint guarantees enterprise-grade privacy and safety from day one.
+
+[3:30 — IMPACT / CLOSE]
+(confident, uplifting pause)
+The Eco Footprint Analyzer isn't just a calculator; it's a catalyst for change. It empowers anyone, anywhere in the world, to instantly understand their climate impact securely and accurately. As a prime example, its localized insights directly support monumental national initiatives like India's "Panchamrit" vision to achieve Net Zero emissions by 2070. By making these insights accessible, we transform individual awareness into powerful, collective action. Together, we can build a sustainable, greener future for our planet. Thank you!

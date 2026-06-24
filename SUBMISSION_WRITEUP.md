@@ -1,7 +1,7 @@
 # Eco Footprint Analyzer - Submission Write-Up
 
 ## 1. Problem Statement
-Individuals and small businesses often struggle to accurately calculate their carbon footprint. While utility bills provide raw usage data (kWh, liters of fuel), translating these numbers into exact climate impact (kg CO₂) requires looking up complex, region-specific emission factors. The **Eco Footprint Analyzer** solves this by autonomously extracting utility data, dynamically querying emission factors via an MCP Server, and generating an actionable, personalized climate reduction plan.
+As nations around the globe race toward Net Zero emissions, grassroots participation is essential. However, individuals and small businesses often struggle to accurately calculate their carbon footprint. While utility bills provide raw usage data (kWh, liters of fuel), translating these numbers into exact climate impact (kg CO₂) requires looking up complex, region-specific emission factors. The **Eco Footprint Analyzer** solves this by autonomously extracting utility data, dynamically querying emission factors via an MCP Server, and generating an actionable, personalized climate reduction plan aligned with global sustainability goals. Importantly, the platform's hyper-localized data actively bolsters bold national pledges—such as India's "Panchamrit" vision of achieving Net Zero by 2070—by translating massive policy goals into everyday citizen action.
 
 ## 2. Solution Architecture
 The solution uses an orchestrated, multi-agent workflow powered by Google's Agent Development Kit (ADK) and Gemini 2.5 Flash:
