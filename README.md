@@ -1,0 +1,72 @@
+# 🌍 Eco Footprint Analyzer
+
+**Eco Footprint Analyzer** is an intelligent, multi-agent AI application designed to help users calculate, understand, and reduce their carbon footprint. Powered by Google's Agent Development Kit (ADK) and Gemini, it seamlessly processes raw utility data to generate actionable climate impact plans.
+
+## 🏗️ Agent Architecture
+
+The application uses an orchestrated multi-agent workflow to securely process user data. Below is the visual output from the ADK Playground:
+
+![Agent Architecture Graph](./adk_graph.png)
+
+### Logical Workflow Details
+
+> **Note:** The code block below automatically renders as a beautiful graphical flowchart when this README is viewed on GitHub or a compatible Markdown viewer.
+
+```mermaid
+graph TD
+    classDef eco fill:#e6ffe6,stroke:#4caf50,stroke-width:2px,color:#2e7d32;
+    classDef safe fill:#e8f5e9,stroke:#81c784,stroke-width:2px,color:#1b5e20;
+    classDef alert fill:#ffebee,stroke:#ef5350,stroke-width:2px,color:#c62828;
+    classDef mcp fill:#fff3e0,stroke:#ffb74d,stroke-width:2px,color:#e65100;
+    classDef final fill:#a5d6a7,stroke:#2e7d32,stroke-width:3px,color:#000000,font-weight:bold;
+
+    User([👤 User Input: Utility Data]) ::: eco --> Security[🛡️ Security Checkpoint\nRedact PII & Prevent Injection] ::: safe
+    Security -- safe --> HITL1[🌍 Ask Country Node\nHITL] ::: eco
+    HITL1 --> DataAnalyst[📊 Data Analyst Agent\nExtract & Summarize] ::: safe
+    DataAnalyst -.->|Fetches data| MCP[(🔌 MCP Server)] ::: mcp
+    DataAnalyst --> ClimateImpact[🌱 Climate Impact Agent\nCalculate Footprint] ::: safe
+    ClimateImpact -.->|Fetches emission factors| MCP
+    ClimateImpact --> HITL2[✅ Final Approval Node\nHITL] ::: eco
+    HITL2 --> Final[🌿 Climate Action Plan] ::: final
+    Security -- error --> Blocked((🛑 Request Blocked)) ::: alert
+```
+
+### 🌟 Key Features
+- **Data Analysis Agent:** Automatically extracts and summarizes utility and usage data.
+- **Climate Impact Agent:** Calculates precise carbon footprint metrics (kg CO2) based on region-specific emission factors.
+- **Privacy-First Security:** Built-in security checkpoints to automatically redact PII (Aadhaar, PAN, SSN, Emails, etc.) and block prompt injection attacks.
+- **Human-in-the-Loop (HITL):** Interactively requests user location and requires explicit human approval before finalizing the climate action plan.
+- **MCP Integration:** Uses the Model Context Protocol (MCP) to seamlessly fetch real-time emission factors and utility data.
+
+---
+
+## 💻 Local Development
+
+Before running the agent locally, ensure you have the `uv` package manager installed.
+
+**1. Install dependencies:**
+```bash
+agents-cli install
+```
+
+**2. Launch the interactive playground:**
+```bash
+agents-cli playground
+```
+This will start a local web server where you can interact with the Eco Footprint Analyzer. Any changes you make to `app/agent.py` will auto-reload.
+
+---
+
+## 🚀 Publish to GitHub
+
+1. Go to github.com and create a new repository named `eco-footprint-analyzer` (Public or Private). Do NOT initialize it with a README, .gitignore, or license.
+2. Run these commands in your terminal to push your code:
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial commit of eco-footprint-analyzer"
+   git branch -M main
+   git remote add origin https://github.com/jar-hsihsa/eco-footprint-analyzer.git
+   git push -u origin main
+   ```
+3. Verify your code is on GitHub!

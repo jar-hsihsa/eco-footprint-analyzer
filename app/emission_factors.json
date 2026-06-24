@@ -1,0 +1,1234 @@
+{
+    "India": {
+        "electricity": {
+            "factor": 0.71,
+            "unit": "kgCO2e/kWh",
+            "source": "CEA India"
+        },
+        "petrol": {
+            "factor": 2.31,
+            "unit": "kgCO2e/liter",
+            "source": "Standard"
+        },
+        "lpg": {
+            "factor": 2.98,
+            "unit": "kgCO2e/kg",
+            "source": "Standard"
+        },
+        "flight_short_haul": {
+            "factor": 115,
+            "unit": "kgCO2e/flight",
+            "source": "Aviation Avg"
+        }
+    },
+    "Australia": {
+        "electricity": {
+            "factor": 0.65,
+            "unit": "kgCO2e/kWh",
+            "source": "National Greenhouse Accounts"
+        },
+        "petrol": {
+            "factor": 2.38,
+            "unit": "kgCO2e/liter",
+            "source": "Standard"
+        },
+        "lpg": {
+            "factor": 2.98,
+            "unit": "kgCO2e/kg",
+            "source": "Standard"
+        },
+        "flight_short_haul": {
+            "factor": 115,
+            "unit": "kgCO2e/flight",
+            "source": "Aviation Avg"
+        }
+    },
+    "Chile": {
+        "electricity": {
+            "factor": 0.35,
+            "unit": "kgCO2e/kWh",
+            "source": "Ministerio de Energ\u00eda Chile"
+        },
+        "petrol": {
+            "factor": 2.31,
+            "unit": "kgCO2e/liter",
+            "source": "Ministerio de Energ\u00eda Chile"
+        },
+        "lpg": {
+            "factor": 2.98,
+            "unit": "kgCO2e/kg",
+            "source": "Standard"
+        },
+        "flight_short_haul": {
+            "factor": 115,
+            "unit": "kgCO2e/flight",
+            "source": "Aviation Avg"
+        }
+    },
+    "UK": {
+        "electricity": {
+            "factor": 0.2,
+            "unit": "kgCO2e/kWh",
+            "source": "DEFRA UK"
+        },
+        "petrol": {
+            "factor": 2.31,
+            "unit": "kgCO2e/liter",
+            "source": "DEFRA UK"
+        },
+        "lpg": {
+            "factor": 2.93,
+            "unit": "kgCO2e/kg",
+            "source": "DEFRA UK"
+        },
+        "flight_short_haul": {
+            "factor": 115,
+            "unit": "kgCO2e/flight",
+            "source": "Aviation Avg"
+        }
+    },
+    "USA": {
+        "electricity": {
+            "factor": 0.38,
+            "unit": "kgCO2e/kWh",
+            "source": "EPA eGRID"
+        },
+        "petrol": {
+            "factor": 2.31,
+            "unit": "kgCO2e/liter",
+            "source": "EPA"
+        },
+        "lpg": {
+            "factor": 2.98,
+            "unit": "kgCO2e/kg",
+            "source": "EPA"
+        },
+        "flight_short_haul": {
+            "factor": 115,
+            "unit": "kgCO2e/flight",
+            "source": "Aviation Avg"
+        }
+    },
+    "Germany": {
+        "electricity": {
+            "factor": 0.38,
+            "unit": "kgCO2e/kWh",
+            "source": "UBA Germany"
+        },
+        "petrol": {
+            "factor": 2.31,
+            "unit": "kgCO2e/liter",
+            "source": "Standard"
+        },
+        "lpg": {
+            "factor": 2.98,
+            "unit": "kgCO2e/kg",
+            "source": "Standard"
+        },
+        "flight_short_haul": {
+            "factor": 115,
+            "unit": "kgCO2e/flight",
+            "source": "Aviation Avg"
+        }
+    },
+    "France": {
+        "electricity": {
+            "factor": 0.05,
+            "unit": "kgCO2e/kWh",
+            "source": "ADEME"
+        },
+        "petrol": {
+            "factor": 2.31,
+            "unit": "kgCO2e/liter",
+            "source": "Standard"
+        },
+        "lpg": {
+            "factor": 2.98,
+            "unit": "kgCO2e/kg",
+            "source": "Standard"
+        },
+        "flight_short_haul": {
+            "factor": 115,
+            "unit": "kgCO2e/flight",
+            "source": "Aviation Avg"
+        }
+    },
+    "Brazil": {
+        "electricity": {
+            "factor": 0.08,
+            "unit": "kgCO2e/kWh",
+            "source": "MCTI Brazil"
+        },
+        "petrol": {
+            "factor": 2.2,
+            "unit": "kgCO2e/liter",
+            "source": "Standard"
+        },
+        "lpg": {
+            "factor": 2.98,
+            "unit": "kgCO2e/kg",
+            "source": "Standard"
+        },
+        "flight_short_haul": {
+            "factor": 115,
+            "unit": "kgCO2e/flight",
+            "source": "Aviation Avg"
+        }
+    },
+    "South Africa": {
+        "electricity": {
+            "factor": 0.94,
+            "unit": "kgCO2e/kWh",
+            "source": "Eskom"
+        },
+        "petrol": {
+            "factor": 2.31,
+            "unit": "kgCO2e/liter",
+            "source": "Standard"
+        },
+        "lpg": {
+            "factor": 2.98,
+            "unit": "kgCO2e/kg",
+            "source": "Standard"
+        },
+        "flight_short_haul": {
+            "factor": 115,
+            "unit": "kgCO2e/flight",
+            "source": "Aviation Avg"
+        }
+    },
+    "Japan": {
+        "electricity": {
+            "factor": 0.46,
+            "unit": "kgCO2e/kWh",
+            "source": "METI Japan"
+        },
+        "petrol": {
+            "factor": 2.31,
+            "unit": "kgCO2e/liter",
+            "source": "Standard"
+        },
+        "lpg": {
+            "factor": 2.98,
+            "unit": "kgCO2e/kg",
+            "source": "Standard"
+        },
+        "flight_short_haul": {
+            "factor": 115,
+            "unit": "kgCO2e/flight",
+            "source": "Aviation Avg"
+        }
+    },
+    "China": {
+        "electricity": {
+            "factor": 0.58,
+            "unit": "kgCO2e/kWh",
+            "source": "NDRC China"
+        },
+        "petrol": {
+            "factor": 2.31,
+            "unit": "kgCO2e/liter",
+            "source": "Standard"
+        },
+        "lpg": {
+            "factor": 2.98,
+            "unit": "kgCO2e/kg",
+            "source": "Standard"
+        },
+        "flight_short_haul": {
+            "factor": 115,
+            "unit": "kgCO2e/flight",
+            "source": "Aviation Avg"
+        }
+    },
+    "Canada": {
+        "electricity": {
+            "factor": 0.13,
+            "unit": "kgCO2e/kWh",
+            "source": "Environment Canada"
+        },
+        "petrol": {
+            "factor": 2.31,
+            "unit": "kgCO2e/liter",
+            "source": "Standard"
+        },
+        "lpg": {
+            "factor": 2.98,
+            "unit": "kgCO2e/kg",
+            "source": "Standard"
+        },
+        "flight_short_haul": {
+            "factor": 115,
+            "unit": "kgCO2e/flight",
+            "source": "Aviation Avg"
+        }
+    },
+    "Mexico": {
+        "electricity": {
+            "factor": 0.43,
+            "unit": "kgCO2e/kWh",
+            "source": "SEMARNAT"
+        },
+        "petrol": {
+            "factor": 2.31,
+            "unit": "kgCO2e/liter",
+            "source": "Standard"
+        },
+        "lpg": {
+            "factor": 2.98,
+            "unit": "kgCO2e/kg",
+            "source": "Standard"
+        },
+        "flight_short_haul": {
+            "factor": 115,
+            "unit": "kgCO2e/flight",
+            "source": "Aviation Avg"
+        }
+    },
+    "Italy": {
+        "electricity": {
+            "factor": 0.25,
+            "unit": "kgCO2e/kWh",
+            "source": "ISPRA"
+        },
+        "petrol": {
+            "factor": 2.31,
+            "unit": "kgCO2e/liter",
+            "source": "Standard"
+        },
+        "lpg": {
+            "factor": 2.98,
+            "unit": "kgCO2e/kg",
+            "source": "Standard"
+        },
+        "flight_short_haul": {
+            "factor": 115,
+            "unit": "kgCO2e/flight",
+            "source": "Aviation Avg"
+        }
+    },
+    "Spain": {
+        "electricity": {
+            "factor": 0.18,
+            "unit": "kgCO2e/kWh",
+            "source": "MITECO"
+        },
+        "petrol": {
+            "factor": 2.31,
+            "unit": "kgCO2e/liter",
+            "source": "Standard"
+        },
+        "lpg": {
+            "factor": 2.98,
+            "unit": "kgCO2e/kg",
+            "source": "Standard"
+        },
+        "flight_short_haul": {
+            "factor": 115,
+            "unit": "kgCO2e/flight",
+            "source": "Aviation Avg"
+        }
+    },
+    "Global_Average": {
+        "electricity": {
+            "factor": 0.45,
+            "unit": "kgCO2e/kWh",
+            "source": "Regional Avg (Singapore)"
+        },
+        "petrol": {
+            "factor": 2.31,
+            "unit": "kgCO2e/liter",
+            "source": "Standard"
+        },
+        "lpg": {
+            "factor": 2.98,
+            "unit": "kgCO2e/kg",
+            "source": "Standard"
+        },
+        "flight_short_haul": {
+            "factor": 115,
+            "unit": "kgCO2e/flight",
+            "source": "Aviation Avg"
+        }
+    },
+    "Argentina": {
+        "electricity": {
+            "factor": 0.45,
+            "unit": "kgCO2e/kWh",
+            "source": "Regional Avg (Singapore)"
+        },
+        "petrol": {
+            "factor": 2.31,
+            "unit": "kgCO2e/liter",
+            "source": "Standard"
+        },
+        "lpg": {
+            "factor": 2.98,
+            "unit": "kgCO2e/kg",
+            "source": "Standard"
+        },
+        "flight_short_haul": {
+            "factor": 115,
+            "unit": "kgCO2e/flight",
+            "source": "Aviation Avg"
+        }
+    },
+    "Nigeria": {
+        "electricity": {
+            "factor": 0.45,
+            "unit": "kgCO2e/kWh",
+            "source": "Regional Avg (Singapore)"
+        },
+        "petrol": {
+            "factor": 2.31,
+            "unit": "kgCO2e/liter",
+            "source": "Standard"
+        },
+        "lpg": {
+            "factor": 2.98,
+            "unit": "kgCO2e/kg",
+            "source": "Standard"
+        },
+        "flight_short_haul": {
+            "factor": 115,
+            "unit": "kgCO2e/flight",
+            "source": "Aviation Avg"
+        }
+    },
+    "Egypt": {
+        "electricity": {
+            "factor": 0.45,
+            "unit": "kgCO2e/kWh",
+            "source": "Regional Avg (Singapore)"
+        },
+        "petrol": {
+            "factor": 2.31,
+            "unit": "kgCO2e/liter",
+            "source": "Standard"
+        },
+        "lpg": {
+            "factor": 2.98,
+            "unit": "kgCO2e/kg",
+            "source": "Standard"
+        },
+        "flight_short_haul": {
+            "factor": 115,
+            "unit": "kgCO2e/flight",
+            "source": "Aviation Avg"
+        }
+    },
+    "Saudi Arabia": {
+        "electricity": {
+            "factor": 0.45,
+            "unit": "kgCO2e/kWh",
+            "source": "Regional Avg (Singapore)"
+        },
+        "petrol": {
+            "factor": 2.31,
+            "unit": "kgCO2e/liter",
+            "source": "Standard"
+        },
+        "lpg": {
+            "factor": 2.98,
+            "unit": "kgCO2e/kg",
+            "source": "Standard"
+        },
+        "flight_short_haul": {
+            "factor": 115,
+            "unit": "kgCO2e/flight",
+            "source": "Aviation Avg"
+        }
+    },
+    "Turkey": {
+        "electricity": {
+            "factor": 0.45,
+            "unit": "kgCO2e/kWh",
+            "source": "Regional Avg (Singapore)"
+        },
+        "petrol": {
+            "factor": 2.31,
+            "unit": "kgCO2e/liter",
+            "source": "Standard"
+        },
+        "lpg": {
+            "factor": 2.98,
+            "unit": "kgCO2e/kg",
+            "source": "Standard"
+        },
+        "flight_short_haul": {
+            "factor": 115,
+            "unit": "kgCO2e/flight",
+            "source": "Aviation Avg"
+        }
+    },
+    "Indonesia": {
+        "electricity": {
+            "factor": 0.45,
+            "unit": "kgCO2e/kWh",
+            "source": "Regional Avg (Singapore)"
+        },
+        "petrol": {
+            "factor": 2.31,
+            "unit": "kgCO2e/liter",
+            "source": "Standard"
+        },
+        "lpg": {
+            "factor": 2.98,
+            "unit": "kgCO2e/kg",
+            "source": "Standard"
+        },
+        "flight_short_haul": {
+            "factor": 115,
+            "unit": "kgCO2e/flight",
+            "source": "Aviation Avg"
+        }
+    },
+    "South Korea": {
+        "electricity": {
+            "factor": 0.45,
+            "unit": "kgCO2e/kWh",
+            "source": "Regional Avg (Singapore)"
+        },
+        "petrol": {
+            "factor": 2.31,
+            "unit": "kgCO2e/liter",
+            "source": "Standard"
+        },
+        "lpg": {
+            "factor": 2.98,
+            "unit": "kgCO2e/kg",
+            "source": "Standard"
+        },
+        "flight_short_haul": {
+            "factor": 115,
+            "unit": "kgCO2e/flight",
+            "source": "Aviation Avg"
+        }
+    },
+    "Russia": {
+        "electricity": {
+            "factor": 0.45,
+            "unit": "kgCO2e/kWh",
+            "source": "Regional Avg (Singapore)"
+        },
+        "petrol": {
+            "factor": 2.31,
+            "unit": "kgCO2e/liter",
+            "source": "Standard"
+        },
+        "lpg": {
+            "factor": 2.98,
+            "unit": "kgCO2e/kg",
+            "source": "Standard"
+        },
+        "flight_short_haul": {
+            "factor": 115,
+            "unit": "kgCO2e/flight",
+            "source": "Aviation Avg"
+        }
+    },
+    "Netherlands": {
+        "electricity": {
+            "factor": 0.45,
+            "unit": "kgCO2e/kWh",
+            "source": "Regional Avg (Singapore)"
+        },
+        "petrol": {
+            "factor": 2.31,
+            "unit": "kgCO2e/liter",
+            "source": "Standard"
+        },
+        "lpg": {
+            "factor": 2.98,
+            "unit": "kgCO2e/kg",
+            "source": "Standard"
+        },
+        "flight_short_haul": {
+            "factor": 115,
+            "unit": "kgCO2e/flight",
+            "source": "Aviation Avg"
+        }
+    },
+    "Switzerland": {
+        "electricity": {
+            "factor": 0.45,
+            "unit": "kgCO2e/kWh",
+            "source": "Regional Avg (Singapore)"
+        },
+        "petrol": {
+            "factor": 2.31,
+            "unit": "kgCO2e/liter",
+            "source": "Standard"
+        },
+        "lpg": {
+            "factor": 2.98,
+            "unit": "kgCO2e/kg",
+            "source": "Standard"
+        },
+        "flight_short_haul": {
+            "factor": 115,
+            "unit": "kgCO2e/flight",
+            "source": "Aviation Avg"
+        }
+    },
+    "Sweden": {
+        "electricity": {
+            "factor": 0.45,
+            "unit": "kgCO2e/kWh",
+            "source": "Regional Avg (Singapore)"
+        },
+        "petrol": {
+            "factor": 2.31,
+            "unit": "kgCO2e/liter",
+            "source": "Standard"
+        },
+        "lpg": {
+            "factor": 2.98,
+            "unit": "kgCO2e/kg",
+            "source": "Standard"
+        },
+        "flight_short_haul": {
+            "factor": 115,
+            "unit": "kgCO2e/flight",
+            "source": "Aviation Avg"
+        }
+    },
+    "Norway": {
+        "electricity": {
+            "factor": 0.45,
+            "unit": "kgCO2e/kWh",
+            "source": "Regional Avg (Singapore)"
+        },
+        "petrol": {
+            "factor": 2.31,
+            "unit": "kgCO2e/liter",
+            "source": "Standard"
+        },
+        "lpg": {
+            "factor": 2.98,
+            "unit": "kgCO2e/kg",
+            "source": "Standard"
+        },
+        "flight_short_haul": {
+            "factor": 115,
+            "unit": "kgCO2e/flight",
+            "source": "Aviation Avg"
+        }
+    },
+    "Poland": {
+        "electricity": {
+            "factor": 0.45,
+            "unit": "kgCO2e/kWh",
+            "source": "Regional Avg (Singapore)"
+        },
+        "petrol": {
+            "factor": 2.31,
+            "unit": "kgCO2e/liter",
+            "source": "Standard"
+        },
+        "lpg": {
+            "factor": 2.98,
+            "unit": "kgCO2e/kg",
+            "source": "Standard"
+        },
+        "flight_short_haul": {
+            "factor": 115,
+            "unit": "kgCO2e/flight",
+            "source": "Aviation Avg"
+        }
+    },
+    "Belgium": {
+        "electricity": {
+            "factor": 0.45,
+            "unit": "kgCO2e/kWh",
+            "source": "Regional Avg (Singapore)"
+        },
+        "petrol": {
+            "factor": 2.31,
+            "unit": "kgCO2e/liter",
+            "source": "Standard"
+        },
+        "lpg": {
+            "factor": 2.98,
+            "unit": "kgCO2e/kg",
+            "source": "Standard"
+        },
+        "flight_short_haul": {
+            "factor": 115,
+            "unit": "kgCO2e/flight",
+            "source": "Aviation Avg"
+        }
+    },
+    "Austria": {
+        "electricity": {
+            "factor": 0.45,
+            "unit": "kgCO2e/kWh",
+            "source": "Regional Avg (Singapore)"
+        },
+        "petrol": {
+            "factor": 2.31,
+            "unit": "kgCO2e/liter",
+            "source": "Standard"
+        },
+        "lpg": {
+            "factor": 2.98,
+            "unit": "kgCO2e/kg",
+            "source": "Standard"
+        },
+        "flight_short_haul": {
+            "factor": 115,
+            "unit": "kgCO2e/flight",
+            "source": "Aviation Avg"
+        }
+    },
+    "Ireland": {
+        "electricity": {
+            "factor": 0.45,
+            "unit": "kgCO2e/kWh",
+            "source": "Regional Avg (Singapore)"
+        },
+        "petrol": {
+            "factor": 2.31,
+            "unit": "kgCO2e/liter",
+            "source": "Standard"
+        },
+        "lpg": {
+            "factor": 2.98,
+            "unit": "kgCO2e/kg",
+            "source": "Standard"
+        },
+        "flight_short_haul": {
+            "factor": 115,
+            "unit": "kgCO2e/flight",
+            "source": "Aviation Avg"
+        }
+    },
+    "Denmark": {
+        "electricity": {
+            "factor": 0.45,
+            "unit": "kgCO2e/kWh",
+            "source": "Regional Avg (Singapore)"
+        },
+        "petrol": {
+            "factor": 2.31,
+            "unit": "kgCO2e/liter",
+            "source": "Standard"
+        },
+        "lpg": {
+            "factor": 2.98,
+            "unit": "kgCO2e/kg",
+            "source": "Standard"
+        },
+        "flight_short_haul": {
+            "factor": 115,
+            "unit": "kgCO2e/flight",
+            "source": "Aviation Avg"
+        }
+    },
+    "Finland": {
+        "electricity": {
+            "factor": 0.45,
+            "unit": "kgCO2e/kWh",
+            "source": "Regional Avg (Singapore)"
+        },
+        "petrol": {
+            "factor": 2.31,
+            "unit": "kgCO2e/liter",
+            "source": "Standard"
+        },
+        "lpg": {
+            "factor": 2.98,
+            "unit": "kgCO2e/kg",
+            "source": "Standard"
+        },
+        "flight_short_haul": {
+            "factor": 115,
+            "unit": "kgCO2e/flight",
+            "source": "Aviation Avg"
+        }
+    },
+    "Portugal": {
+        "electricity": {
+            "factor": 0.45,
+            "unit": "kgCO2e/kWh",
+            "source": "Regional Avg (Singapore)"
+        },
+        "petrol": {
+            "factor": 2.31,
+            "unit": "kgCO2e/liter",
+            "source": "Standard"
+        },
+        "lpg": {
+            "factor": 2.98,
+            "unit": "kgCO2e/kg",
+            "source": "Standard"
+        },
+        "flight_short_haul": {
+            "factor": 115,
+            "unit": "kgCO2e/flight",
+            "source": "Aviation Avg"
+        }
+    },
+    "Greece": {
+        "electricity": {
+            "factor": 0.45,
+            "unit": "kgCO2e/kWh",
+            "source": "Regional Avg (Singapore)"
+        },
+        "petrol": {
+            "factor": 2.31,
+            "unit": "kgCO2e/liter",
+            "source": "Standard"
+        },
+        "lpg": {
+            "factor": 2.98,
+            "unit": "kgCO2e/kg",
+            "source": "Standard"
+        },
+        "flight_short_haul": {
+            "factor": 115,
+            "unit": "kgCO2e/flight",
+            "source": "Aviation Avg"
+        }
+    },
+    "New Zealand": {
+        "electricity": {
+            "factor": 0.45,
+            "unit": "kgCO2e/kWh",
+            "source": "Regional Avg (Singapore)"
+        },
+        "petrol": {
+            "factor": 2.31,
+            "unit": "kgCO2e/liter",
+            "source": "Standard"
+        },
+        "lpg": {
+            "factor": 2.98,
+            "unit": "kgCO2e/kg",
+            "source": "Standard"
+        },
+        "flight_short_haul": {
+            "factor": 115,
+            "unit": "kgCO2e/flight",
+            "source": "Aviation Avg"
+        }
+    },
+    "Colombia": {
+        "electricity": {
+            "factor": 0.45,
+            "unit": "kgCO2e/kWh",
+            "source": "Regional Avg (Singapore)"
+        },
+        "petrol": {
+            "factor": 2.31,
+            "unit": "kgCO2e/liter",
+            "source": "Standard"
+        },
+        "lpg": {
+            "factor": 2.98,
+            "unit": "kgCO2e/kg",
+            "source": "Standard"
+        },
+        "flight_short_haul": {
+            "factor": 115,
+            "unit": "kgCO2e/flight",
+            "source": "Aviation Avg"
+        }
+    },
+    "Peru": {
+        "electricity": {
+            "factor": 0.45,
+            "unit": "kgCO2e/kWh",
+            "source": "Regional Avg (Singapore)"
+        },
+        "petrol": {
+            "factor": 2.31,
+            "unit": "kgCO2e/liter",
+            "source": "Standard"
+        },
+        "lpg": {
+            "factor": 2.98,
+            "unit": "kgCO2e/kg",
+            "source": "Standard"
+        },
+        "flight_short_haul": {
+            "factor": 115,
+            "unit": "kgCO2e/flight",
+            "source": "Aviation Avg"
+        }
+    },
+    "Venezuela": {
+        "electricity": {
+            "factor": 0.45,
+            "unit": "kgCO2e/kWh",
+            "source": "Regional Avg (Singapore)"
+        },
+        "petrol": {
+            "factor": 2.31,
+            "unit": "kgCO2e/liter",
+            "source": "Standard"
+        },
+        "lpg": {
+            "factor": 2.98,
+            "unit": "kgCO2e/kg",
+            "source": "Standard"
+        },
+        "flight_short_haul": {
+            "factor": 115,
+            "unit": "kgCO2e/flight",
+            "source": "Aviation Avg"
+        }
+    },
+    "Malaysia": {
+        "electricity": {
+            "factor": 0.45,
+            "unit": "kgCO2e/kWh",
+            "source": "Regional Avg (Singapore)"
+        },
+        "petrol": {
+            "factor": 2.31,
+            "unit": "kgCO2e/liter",
+            "source": "Standard"
+        },
+        "lpg": {
+            "factor": 2.98,
+            "unit": "kgCO2e/kg",
+            "source": "Standard"
+        },
+        "flight_short_haul": {
+            "factor": 115,
+            "unit": "kgCO2e/flight",
+            "source": "Aviation Avg"
+        }
+    },
+    "Thailand": {
+        "electricity": {
+            "factor": 0.45,
+            "unit": "kgCO2e/kWh",
+            "source": "Regional Avg (Singapore)"
+        },
+        "petrol": {
+            "factor": 2.31,
+            "unit": "kgCO2e/liter",
+            "source": "Standard"
+        },
+        "lpg": {
+            "factor": 2.98,
+            "unit": "kgCO2e/kg",
+            "source": "Standard"
+        },
+        "flight_short_haul": {
+            "factor": 115,
+            "unit": "kgCO2e/flight",
+            "source": "Aviation Avg"
+        }
+    },
+    "Vietnam": {
+        "electricity": {
+            "factor": 0.45,
+            "unit": "kgCO2e/kWh",
+            "source": "Regional Avg (Singapore)"
+        },
+        "petrol": {
+            "factor": 2.31,
+            "unit": "kgCO2e/liter",
+            "source": "Standard"
+        },
+        "lpg": {
+            "factor": 2.98,
+            "unit": "kgCO2e/kg",
+            "source": "Standard"
+        },
+        "flight_short_haul": {
+            "factor": 115,
+            "unit": "kgCO2e/flight",
+            "source": "Aviation Avg"
+        }
+    },
+    "Philippines": {
+        "electricity": {
+            "factor": 0.45,
+            "unit": "kgCO2e/kWh",
+            "source": "Regional Avg (Singapore)"
+        },
+        "petrol": {
+            "factor": 2.31,
+            "unit": "kgCO2e/liter",
+            "source": "Standard"
+        },
+        "lpg": {
+            "factor": 2.98,
+            "unit": "kgCO2e/kg",
+            "source": "Standard"
+        },
+        "flight_short_haul": {
+            "factor": 115,
+            "unit": "kgCO2e/flight",
+            "source": "Aviation Avg"
+        }
+    },
+    "Pakistan": {
+        "electricity": {
+            "factor": 0.45,
+            "unit": "kgCO2e/kWh",
+            "source": "Regional Avg (Singapore)"
+        },
+        "petrol": {
+            "factor": 2.31,
+            "unit": "kgCO2e/liter",
+            "source": "Standard"
+        },
+        "lpg": {
+            "factor": 2.98,
+            "unit": "kgCO2e/kg",
+            "source": "Standard"
+        },
+        "flight_short_haul": {
+            "factor": 115,
+            "unit": "kgCO2e/flight",
+            "source": "Aviation Avg"
+        }
+    },
+    "Bangladesh": {
+        "electricity": {
+            "factor": 0.45,
+            "unit": "kgCO2e/kWh",
+            "source": "Regional Avg (Singapore)"
+        },
+        "petrol": {
+            "factor": 2.31,
+            "unit": "kgCO2e/liter",
+            "source": "Standard"
+        },
+        "lpg": {
+            "factor": 2.98,
+            "unit": "kgCO2e/kg",
+            "source": "Standard"
+        },
+        "flight_short_haul": {
+            "factor": 115,
+            "unit": "kgCO2e/flight",
+            "source": "Aviation Avg"
+        }
+    },
+    "Iran": {
+        "electricity": {
+            "factor": 0.45,
+            "unit": "kgCO2e/kWh",
+            "source": "Regional Avg (Singapore)"
+        },
+        "petrol": {
+            "factor": 2.31,
+            "unit": "kgCO2e/liter",
+            "source": "Standard"
+        },
+        "lpg": {
+            "factor": 2.98,
+            "unit": "kgCO2e/kg",
+            "source": "Standard"
+        },
+        "flight_short_haul": {
+            "factor": 115,
+            "unit": "kgCO2e/flight",
+            "source": "Aviation Avg"
+        }
+    },
+    "Iraq": {
+        "electricity": {
+            "factor": 0.45,
+            "unit": "kgCO2e/kWh",
+            "source": "Regional Avg (Singapore)"
+        },
+        "petrol": {
+            "factor": 2.31,
+            "unit": "kgCO2e/liter",
+            "source": "Standard"
+        },
+        "lpg": {
+            "factor": 2.98,
+            "unit": "kgCO2e/kg",
+            "source": "Standard"
+        },
+        "flight_short_haul": {
+            "factor": 115,
+            "unit": "kgCO2e/flight",
+            "source": "Aviation Avg"
+        }
+    },
+    "UAE": {
+        "electricity": {
+            "factor": 0.45,
+            "unit": "kgCO2e/kWh",
+            "source": "Regional Avg (Singapore)"
+        },
+        "petrol": {
+            "factor": 2.31,
+            "unit": "kgCO2e/liter",
+            "source": "Standard"
+        },
+        "lpg": {
+            "factor": 2.98,
+            "unit": "kgCO2e/kg",
+            "source": "Standard"
+        },
+        "flight_short_haul": {
+            "factor": 115,
+            "unit": "kgCO2e/flight",
+            "source": "Aviation Avg"
+        }
+    },
+    "Israel": {
+        "electricity": {
+            "factor": 0.45,
+            "unit": "kgCO2e/kWh",
+            "source": "Regional Avg (Singapore)"
+        },
+        "petrol": {
+            "factor": 2.31,
+            "unit": "kgCO2e/liter",
+            "source": "Standard"
+        },
+        "lpg": {
+            "factor": 2.98,
+            "unit": "kgCO2e/kg",
+            "source": "Standard"
+        },
+        "flight_short_haul": {
+            "factor": 115,
+            "unit": "kgCO2e/flight",
+            "source": "Aviation Avg"
+        }
+    },
+    "Kenya": {
+        "electricity": {
+            "factor": 0.45,
+            "unit": "kgCO2e/kWh",
+            "source": "Regional Avg (Singapore)"
+        },
+        "petrol": {
+            "factor": 2.31,
+            "unit": "kgCO2e/liter",
+            "source": "Standard"
+        },
+        "lpg": {
+            "factor": 2.98,
+            "unit": "kgCO2e/kg",
+            "source": "Standard"
+        },
+        "flight_short_haul": {
+            "factor": 115,
+            "unit": "kgCO2e/flight",
+            "source": "Aviation Avg"
+        }
+    },
+    "Ethiopia": {
+        "electricity": {
+            "factor": 0.45,
+            "unit": "kgCO2e/kWh",
+            "source": "Regional Avg (Singapore)"
+        },
+        "petrol": {
+            "factor": 2.31,
+            "unit": "kgCO2e/liter",
+            "source": "Standard"
+        },
+        "lpg": {
+            "factor": 2.98,
+            "unit": "kgCO2e/kg",
+            "source": "Standard"
+        },
+        "flight_short_haul": {
+            "factor": 115,
+            "unit": "kgCO2e/flight",
+            "source": "Aviation Avg"
+        }
+    },
+    "Morocco": {
+        "electricity": {
+            "factor": 0.45,
+            "unit": "kgCO2e/kWh",
+            "source": "Regional Avg (Singapore)"
+        },
+        "petrol": {
+            "factor": 2.31,
+            "unit": "kgCO2e/liter",
+            "source": "Standard"
+        },
+        "lpg": {
+            "factor": 2.98,
+            "unit": "kgCO2e/kg",
+            "source": "Standard"
+        },
+        "flight_short_haul": {
+            "factor": 115,
+            "unit": "kgCO2e/flight",
+            "source": "Aviation Avg"
+        }
+    },
+    "Algeria": {
+        "electricity": {
+            "factor": 0.45,
+            "unit": "kgCO2e/kWh",
+            "source": "Regional Avg (Singapore)"
+        },
+        "petrol": {
+            "factor": 2.31,
+            "unit": "kgCO2e/liter",
+            "source": "Standard"
+        },
+        "lpg": {
+            "factor": 2.98,
+            "unit": "kgCO2e/kg",
+            "source": "Standard"
+        },
+        "flight_short_haul": {
+            "factor": 115,
+            "unit": "kgCO2e/flight",
+            "source": "Aviation Avg"
+        }
+    },
+    "Ghana": {
+        "electricity": {
+            "factor": 0.45,
+            "unit": "kgCO2e/kWh",
+            "source": "Regional Avg (Singapore)"
+        },
+        "petrol": {
+            "factor": 2.31,
+            "unit": "kgCO2e/liter",
+            "source": "Standard"
+        },
+        "lpg": {
+            "factor": 2.98,
+            "unit": "kgCO2e/kg",
+            "source": "Standard"
+        },
+        "flight_short_haul": {
+            "factor": 115,
+            "unit": "kgCO2e/flight",
+            "source": "Aviation Avg"
+        }
+    },
+    "Singapore": {
+        "electricity": {
+            "factor": 0.45,
+            "unit": "kgCO2e/kWh",
+            "source": "Regional Avg (Singapore)"
+        },
+        "petrol": {
+            "factor": 2.31,
+            "unit": "kgCO2e/liter",
+            "source": "Standard"
+        },
+        "lpg": {
+            "factor": 2.98,
+            "unit": "kgCO2e/kg",
+            "source": "Standard"
+        },
+        "flight_short_haul": {
+            "factor": 115,
+            "unit": "kgCO2e/flight",
+            "source": "Aviation Avg"
+        }
+    }
+}
