@@ -62,17 +62,3 @@ agents-cli playground
 This will start a local web server where you can interact with the Eco Footprint Analyzer. Any changes you make to `app/agent.py` will auto-reload.
 
 ---
-
-## 🚀 Publish to GitHub
-
-1. Go to github.com and create a new repository named `eco-footprint-analyzer` (Public or Private). Do NOT initialize it with a README, .gitignore, or license.
-2. Run these commands in your terminal to push your code:
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit of eco-footprint-analyzer"
-   git branch -M main
-   git remote add origin https://github.com/jar-hsihsa/eco-footprint-analyzer.git
-   git push -u origin main
-   ```
-3. Verify your code is on GitHub!
