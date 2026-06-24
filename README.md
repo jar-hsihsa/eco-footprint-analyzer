@@ -62,3 +62,10 @@ agents-cli playground
 This will start a local web server where you can interact with the Eco Footprint Analyzer. Any changes you make to `app/agent.py` will auto-reload.
 
 ---
+## 🎨 Project Assets
+
+### Cover Banner
+![Cover Page Banner](./assets/cover_page_banner.png)
+
+### Workflow Diagram
+![Architecture Diagram](./assets/architecture_diagram.png)
