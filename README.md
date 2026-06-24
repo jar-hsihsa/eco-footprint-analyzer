@@ -71,6 +71,3 @@ This will start a local web server where you can interact with the Eco Footprint
 ![Architecture Diagram](./assets/architecture_diagram.png)
 
 ---
-
-## 🎤 Presentation
-Check out the [Demo Script](./DEMO_SCRIPT.txt) for a complete 3-minute presentation walkthrough of the Eco Footprint Analyzer!
