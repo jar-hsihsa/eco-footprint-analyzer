@@ -93,7 +93,11 @@ To deploy this agent to a live public endpoint (Cloud Run):
 ### Workflow Diagram
 ![Architecture Diagram](./assets/architecture_diagram.png)
 
-### Presentation Slides (API Fallback)
-If you encounter an API rate limit (`429 Too Many Requests`) during live judging, our system will seamlessly catch the error and display a friendly message in the UI. To see deterministic fallback examples of the full successful workflow, please refer to our presentation slides:
+### Presentation Slides & Error Fallback
+If you encounter an API rate limit (`429 Too Many Requests`) during live judging, our system will seamlessly catch the error and display a friendly message in the UI:
+
+![429 Quota Error Fallback](./assets/error_429_fallback.png)
+
+To see deterministic fallback examples of the full successful workflow, please refer to our presentation slides:
 - [Automating Climate Intelligence (PDF)](./assets/Automating_Climate_Intelligence.pdf)
 - [Automating Climate Intelligence (PPTX)](./assets/Automating_Climate_Intelligence.pptx)
