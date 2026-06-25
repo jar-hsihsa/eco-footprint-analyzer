@@ -84,7 +84,7 @@ To deploy this agent to a live public endpoint (Cloud Run):
 3. **Logs & Telemetry:** If configured, set your `LOGS_BUCKET_NAME` in the deployment secrets to enable persistent GCS logging and Vertex AI telemetry mapping.
 
 ---
-## 🎨 Project Assets
+## 🎨 Project Assets & Fallback Slides
 
 ### Cover Banner
 ![Cover Page Banner](./assets/cover_page_banner.png)
@@ -92,4 +92,7 @@ To deploy this agent to a live public endpoint (Cloud Run):
 ### Workflow Diagram
 ![Architecture Diagram](./assets/architecture_diagram.png)
 
----
+### Presentation Slides (API Fallback)
+If you encounter an API rate limit (`429 Too Many Requests`) during live judging, please refer to the deterministic fallback examples in our presentation slides:
+- [Automating Climate Intelligence (PDF)](./assets/Automating_Climate_Intelligence.pdf)
+- [Automating Climate Intelligence (PPTX)](./assets/Automating_Climate_Intelligence.pptx)
