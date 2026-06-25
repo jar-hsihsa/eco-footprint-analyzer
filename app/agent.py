@@ -2,6 +2,7 @@ import os
 import re
 
 import google.auth
+from google.genai import types
 from google.adk.agents import LlmAgent
 from google.adk.apps import App, ResumabilityConfig
 from google.adk.events import Event, RequestInput
@@ -62,13 +63,13 @@ def security_checkpoint(node_input: str) -> Event:
 
 
 @node
-def error_handler(node_input: str) -> Event:
+def error_handler(node_input: str):
     """
-    Fallback node to handle security violations gracefully.
-    If prompt injection is detected, this node intercepts the workflow
-    and returns a clean error message to the user without executing downstream agents.
+    Fallback node to handle security violations and API errors gracefully.
+    Returns a clean error message to the user without executing downstream agents.
     """
-    return Event(output=node_input)
+    yield Event(content=types.Content(role='model', parts=[types.Part.from_text(text=node_input)]))
+    yield Event(output=node_input)
 
 
 from pydantic import BaseModel
@@ -115,6 +116,25 @@ climate_impact_agent = LlmAgent(
     output_key="final_plan"
 )
 
+@node(rerun_on_resume=True)
+async def run_llm_chain(ctx, node_input: str):
+    """
+    Executes the LLM agents and catches API quota errors (Error 429).
+    """
+    try:
+        # Run Data Analyst
+        analyst_event = await ctx.run_node(data_analyst_agent, node_input=node_input)
+        # Run Climate Impact
+        climate_event = await ctx.run_node(climate_impact_agent, node_input=analyst_event.output)
+        yield Event(output=climate_event.output, route="success")
+    except Exception as e:
+        error_str = str(e)
+        if "429" in error_str or "ResourceExhausted" in error_str:
+            msg = "Error 429: We've hit the Gemini API free tier quota limit. Please wait a moment before trying again!"
+            yield Event(output=msg, route="error")
+        else:
+            yield Event(output=f"An unexpected error occurred: {error_str}", route="error")
+
 # Human in the Loop (HITL) Node for Country Selection
 @node(rerun_on_resume=True)
 async def ask_country(ctx, node_input: str):
@@ -155,9 +175,8 @@ workflow = Workflow(
     edges=[
         ('START', security_checkpoint),
         (security_checkpoint, {"safe": ask_country, "error": error_handler}),
-        (ask_country, {"next": data_analyst_agent}),
-        (data_analyst_agent, climate_impact_agent),
-        (climate_impact_agent, human_approval),
+        (ask_country, {"next": run_llm_chain}),
+        (run_llm_chain, {"success": human_approval, "error": error_handler}),
     ]
 )
 

@@ -43,6 +43,7 @@ graph TD
 - **Privacy-First Security:** Built-in security checkpoints to automatically redact PII (Aadhaar, PAN, SSN, Emails, etc.) and block prompt injection attacks.
 - **Human-in-the-Loop (HITL):** Interactively requests user location and requires explicit human approval before finalizing the climate action plan.
 - **MCP Integration:** Uses the Model Context Protocol (MCP) to seamlessly fetch real-time emission factors and utility data.
+- **Graceful Error Handling:** Automatically catches and gracefully handles API quota limits (e.g., 429 Resource Exhausted) to provide clear, actionable feedback directly in the UI.
 
 ---
 
@@ -93,6 +94,6 @@ To deploy this agent to a live public endpoint (Cloud Run):
 ![Architecture Diagram](./assets/architecture_diagram.png)
 
 ### Presentation Slides (API Fallback)
-If you encounter an API rate limit (`429 Too Many Requests`) during live judging, please refer to the deterministic fallback examples in our presentation slides:
+If you encounter an API rate limit (`429 Too Many Requests`) during live judging, our system will seamlessly catch the error and display a friendly message in the UI. To see deterministic fallback examples of the full successful workflow, please refer to our presentation slides:
 - [Automating Climate Intelligence (PDF)](./assets/Automating_Climate_Intelligence.pdf)
 - [Automating Climate Intelligence (PPTX)](./assets/Automating_Climate_Intelligence.pptx)
