@@ -50,16 +50,38 @@ graph TD
 
 Before running the agent locally, ensure you have the `uv` package manager installed.
 
-**1. Install dependencies:**
+**1. Setup Environment Variables:**
+Create a `.env` file based on the provided template:
+```bash
+cp .env.example .env
+```
+Then, edit the `.env` file to include your `GOOGLE_CLOUD_LOCATION` and `GOOGLE_CLOUD_PROJECT`. Note: NEVER commit your actual `.env` file (it is in `.gitignore`).
+
+**2. Install dependencies:**
 ```bash
 agents-cli install
 ```
 
-**2. Launch the interactive playground:**
+**3. Launch the interactive playground:**
 ```bash
 agents-cli playground
 ```
 This will start a local web server where you can interact with the Eco Footprint Analyzer. Any changes you make to `app/agent.py` will auto-reload.
+
+---
+
+## 🚀 Deployment (Reproduction)
+
+While local execution via the playground is standard, this project is built on the robust Google Agent Runtime (`app/agent_runtime_app.py`) making it production-ready for Google Cloud.
+
+To deploy this agent to a live public endpoint (Cloud Run):
+
+1. **Ensure GCP Auth:** Run `gcloud auth application-default login`
+2. **Deploy via ADK:**
+   ```bash
+   agents-cli deploy cloud-run
+   ```
+3. **Logs & Telemetry:** If configured, set your `LOGS_BUCKET_NAME` in the deployment secrets to enable persistent GCS logging and Vertex AI telemetry mapping.
 
 ---
 ## 🎨 Project Assets

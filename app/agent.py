@@ -25,6 +25,19 @@ mcp_toolset = McpToolset(
 # Phase 4: Security Node in the Workflow Graph
 @node
 def security_checkpoint(node_input: str) -> Event:
+    """
+    Security check node designed to protect user privacy and system integrity.
+    
+    Implementation details:
+    1. PII Redaction: Uses regex to identify and scrub sensitive info (Aadhaar, PAN, SSN, etc.)
+       before it ever reaches the LLM, ensuring privacy compliance.
+    2. Prompt Injection Defense: Checks input against known malicious patterns to prevent
+       users from overriding agent instructions.
+    
+    Behaviors:
+    - Returns route='safe' if the input is clean or successfully scrubbed.
+    - Returns route='error' if malicious injection is detected, routing to the error handler.
+    """
     pii_patterns = [
         (re.compile(r'\b\d{4}\s?\d{4}\s?\d{4}\b'), '[REDACTED_AADHAAR]'),
         (re.compile(r'\b[A-Z]{5}\d{4}[A-Z]{1}\b'), '[REDACTED_PAN]'),
@@ -46,6 +59,16 @@ def security_checkpoint(node_input: str) -> Event:
 
     # Return the safe output to continue routing
     return Event(output=scrubbed, route="safe")
+
+
+@node
+def error_handler(node_input: str) -> Event:
+    """
+    Fallback node to handle security violations gracefully.
+    If prompt injection is detected, this node intercepts the workflow
+    and returns a clean error message to the user without executing downstream agents.
+    """
+    return Event(output=node_input)
 
 
 from pydantic import BaseModel
@@ -95,6 +118,13 @@ climate_impact_agent = LlmAgent(
 # Human in the Loop (HITL) Node for Country Selection
 @node(rerun_on_resume=True)
 async def ask_country(ctx, node_input: str):
+    """
+    HITL node to interactively request the user's location.
+    
+    Design choice: Uses `rerun_on_resume=True` so that when the workflow resumes 
+    with the user's input, this node re-executes and appends the explicit 
+    country data to the payload before passing it to the Data Analyst.
+    """
     if not ctx.resume_inputs:
         yield RequestInput(interrupt_id="ask_country", message="Before we calculate, which country or city are you in?")
         return
@@ -107,6 +137,12 @@ async def ask_country(ctx, node_input: str):
 # Human in the Loop (HITL) Node for Final Approval
 @node(rerun_on_resume=True)
 async def human_approval(ctx, node_input: dict):
+    """
+    Final approval HITL node.
+    
+    Ensures that a human reviews the generated climate action plan before it is 
+    finalized or executed, enforcing a safe, human-supervised AI pattern.
+    """
     if not ctx.resume_inputs:
         yield RequestInput(interrupt_id="approval", message="Please review the plan. Type 'approve' to finalize.")
         return
@@ -118,7 +154,7 @@ workflow = Workflow(
     name="orchestrator",
     edges=[
         ('START', security_checkpoint),
-        (security_checkpoint, {"safe": ask_country}),
+        (security_checkpoint, {"safe": ask_country, "error": error_handler}),
         (ask_country, {"next": data_analyst_agent}),
         (data_analyst_agent, climate_impact_agent),
         (climate_impact_agent, human_approval),
