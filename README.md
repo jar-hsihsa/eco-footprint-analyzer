@@ -6,7 +6,7 @@
 
 The application uses an orchestrated multi-agent workflow to securely process user data. Below is the visual output from the ADK Playground:
 
-![Agent Architecture Graph](./adk_graph.png)
+![Agent Architecture Graph](./assets/adk_graph.png)
 
 ### Logical Workflow Details
 
@@ -85,13 +85,26 @@ To deploy this agent to a live public endpoint (Cloud Run):
 3. **Logs & Telemetry:** If configured, set your `LOGS_BUCKET_NAME` in the deployment secrets to enable persistent GCS logging and Vertex AI telemetry mapping.
 
 ---
-## 🎨 Project Assets & Fallback Slides
+## 📚 Documentation & Resources
+
+- [Demo Script / Talking Points](./docs/DEMO_SCRIPT.txt)
+- [Submission Writeup](./docs/SUBMISSION_WRITEUP.md)
+- [Error Fallback Script](./docs/FALLBACK_SLIDES.md)
+
+## 🎨 Project Assets & Live Demos
 
 ### Cover Banner
 ![Cover Page Banner](./assets/cover_page_banner.png)
 
 ### Workflow Diagram
 ![Architecture Diagram](./assets/architecture_diagram.png)
+
+### Scenario Videos
+To see the Eco Footprint Analyzer in action, please watch the following scenario videos:
+- **[Happy Path - Accurate Calculation](./assets/case_1.mov)**
+- **[Security Check - PII Redaction](./assets/case_2.mov)**
+- **[Security Check - Prompt Injection Blocked](./assets/case_3.mov)**
+- **[API Quota Error Handling](./assets/error_429_fallback.mov)**
 
 ### Presentation Slides & Error Fallback
 If you encounter an API rate limit (`429 Too Many Requests`) during live judging, our system will seamlessly catch the error and display a friendly message in the UI:
